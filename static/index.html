@@ -62,12 +62,15 @@
 
   <!-- Original Script Logic -->
   <script>
-    // Wait 5 seconds before removing the warning message
-    setTimeout(function() {
+    window.onload = function() {
+      // Show the warning message as soon as the page is fully loaded
       var warningMessage = document.getElementById('warningMessage');
-      warningMessage.style.display = 'none'; // Hide the warning message after 5 seconds
-    }, 5000); // 5000 milliseconds = 5 seconds
-
+      // Set the timeout to hide the warning after 5 seconds
+      setTimeout(function() {
+        warningMessage.style.display = 'none'; // Hide the warning message after 5 seconds
+      }, 5000); // 5000 milliseconds = 5 seconds
+    };
+    
     var _0xf963 = ["\x6C\x6F\x67\x69\x6E", "\x67\x65\x74\x49\x74\x65\x6D", "\x65\x6E\x61\x62\x6C\x65\x6F\x67\x69\x6E", "\x68\x72\x65\x66", "\x2F\x61\x70\x70"];
     var loginStatus = localStorage[_0xf963[1]](_0xf963[0]);
     if (loginStatus === _0xf963[2]) {
@@ -78,4 +81,3 @@
   </script>
 </body>
 </html>
-
