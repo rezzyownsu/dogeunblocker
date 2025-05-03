@@ -47,7 +47,7 @@
 
   <!-- Warning Message -->
   <div class="content">
-    <div class="warning">
+    <div id="warningMessage" class="warning">
       WARNING: USE AT YOUR OWN RISK!<br>
       Adam just changed the name to "lol" – it's the same thing, less games, but the same features though.<br>
       USE AT YOUR OWN RISK. THIS SITE MIGHT GET YOU IN THE PENALTY BOX OR YOUR COMPUTER TAKEN AWAY.<br>
@@ -62,9 +62,15 @@
 
   <!-- Original Script Logic -->
   <script>
-    var _0xf963=["\x6C\x6F\x67\x69\x6E","\x67\x65\x74\x49\x74\x65\x6D","\x65\x6E\x61\x62\x6C\x65\x6F\x67\x69\x6E","\x68\x72\x65\x66","\x2F\x61\x70\x70"];
+    // Wait 5 seconds before removing the warning message
+    setTimeout(function() {
+      var warningMessage = document.getElementById('warningMessage');
+      warningMessage.style.display = 'none'; // Hide the warning message after 5 seconds
+    }, 5000); // 5000 milliseconds = 5 seconds
+
+    var _0xf963 = ["\x6C\x6F\x67\x69\x6E", "\x67\x65\x74\x49\x74\x65\x6D", "\x65\x6E\x61\x62\x6C\x65\x6F\x67\x69\x6E", "\x68\x72\x65\x66", "\x2F\x61\x70\x70"];
     var loginStatus = localStorage[_0xf963[1]](_0xf963[0]);
-    if(loginStatus === _0xf963[2]) {
+    if (loginStatus === _0xf963[2]) {
       showLogin();
     } else {
       location[_0xf963[3]] = _0xf963[4];
@@ -72,3 +78,4 @@
   </script>
 </body>
 </html>
+
