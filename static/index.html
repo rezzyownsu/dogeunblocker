@@ -1,96 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="title" content="Adam Made Doge Unblocked?" />
-  <meta name="description" content="Use at your own risk! This site may get you into trouble." />
-  <title>Adam Made Doge Unblocked?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="Login - CCM Mathematics" />
+  <meta name="description" content="Enhancing mathematical skills with comprehensive courses and resources for problem-solving and analytical thinking." />
+  <title>Login - CCM Mathematics</title>
+  <link rel="icon" href="null">
+  <link rel="stylesheet" href="/assets/css/login.css">
+  <script src="/assets/js/showlogin.js"></script>
+
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #1a1a1a;
-      color: white;
-      text-align: center;
-    }
-
-    h1 {
-      color: #ff0000;
-      font-size: 36px;
-    }
-
-    .content {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-
-    .warning {
-      color: yellow;
-      font-size: 20px;
-      font-weight: bold;
-      background-color: #000000;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 20px auto;
-      width: 80%;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-
-    .disclaimer {
-      font-size: 16px;
-      color: #aaa;
-      margin-top: 20px;
-    }
-
-    /* "Made by Adam" Text Style */
-    .made-by-adam {
+    /* Message styling */
+    #warning-message {
       position: fixed;
-      bottom: 10px;
+      top: 10%;
       left: 50%;
       transform: translateX(-50%);
       background-color: red;
       color: white;
       font-size: 24px;
-      padding: 10px;
-      font-weight: bold;
+      padding: 20px;
       border-radius: 10px;
-      z-index: 9999;
+      z-index: 9999;  /* Ensure it's always on top */
+      display: none;   /* Hidden initially */
     }
   </style>
 </head>
 <body>
-  <!-- Title for the page -->
-  <h1>Adam Made Doge Unblocked?</h1>
+  <!-- Warning message -->
+  <div id="warning-message">WARNING: USE AT YOUR OWN RISK - Adam just changed the name to LOL, it's the same thing less games but same features tho.</div>
 
-  <!-- Warning Message -->
-  <div class="content">
-    <div id="warningMessage" class="warning">
-      WARNING: USE AT YOUR OWN RISK!<br>
-      Adam just changed the name to "lol" – it's the same thing, less games, but the same features though.<br>
-      USE AT YOUR OWN RISK. THIS SITE MIGHT GET YOU IN THE PENALTY BOX OR YOUR COMPUTER TAKEN AWAY.<br>
-      DO NOT SHARE THIS WITH ANYBODY OR I WILL REMOVE YOUR PERMISSION FROM THIS SITE.
-    </div>
-  </div>
-
-  <!-- Disclaimer Section -->
-  <div class="disclaimer">
-    <p>This site is for educational purposes only. Proceed with caution.</p>
-  </div>
-
-  <!-- "Made by Adam" Text -->
-  <div class="made-by-adam">
-    Made by Adam
-  </div>
-
-  <!-- Original Script Logic -->
   <script>
-    window.onload = function() {
-      // Show the warning message as soon as the page is fully loaded
-      var warningMessage = document.getElementById('warningMessage');
-      // Set the timeout to hide the warning after 5 seconds
+    // Function to show the warning message for 5 seconds
+    function showWarning() {
+      const warningMessage = document.getElementById('warning-message');
+      warningMessage.style.display = 'block'; // Show the warning message
       setTimeout(function() {
-        warningMessage.style.display = 'none'; // Hide the warning message after 5 seconds
-      }, 5000); // 5000 milliseconds = 5 seconds
-    };
-    
+        warningMessage.style.display = 'none'; // Hide it after 5 seconds
+      }, 5000); // 5 seconds
+    }
+
+    // Display the message when the page loads
+    window.onload = showWarning;
+  </script>
+
+  <script>
     var _0xf963 = ["\x6C\x6F\x67\x69\x6E", "\x67\x65\x74\x49\x74\x65\x6D", "\x65\x6E\x61\x62\x6C\x65\x6F\x67\x69\x6E", "\x68\x72\x65\x66", "\x2F\x61\x70\x70"];
     var loginStatus = localStorage[_0xf963[1]](_0xf963[0]);
     if (loginStatus === _0xf963[2]) {
@@ -101,3 +56,4 @@
   </script>
 </body>
 </html>
+
